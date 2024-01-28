@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./vueLamp_img/images/menu.png" draggable="false" class="menu_img">
+            <img src="./vueLamp_img/images/logo.png" draggable="false" class="logo">
+            <ul>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Modern</a></li>
+                <li><a href="#">Contemporary</a></li>
+                <li><a href="#">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp_container">
+            <img src="./vueLamp_img/images/lamp.png" class="lamp">
+            <img src="./vueLamp_img/images/light.png" class="light" id="light">
+        </div>
+
+        <div class="text_container">
+            <h1>Latest <br> in Lighting</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quaerat. Dolorum similique laudantium eaque eligendi, iure harum explicabo, deserunt alias qui dignissimos earum perferendis. A ut qui aut libero harum.</p>
+            <a href="#">Check all Collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+
+
+        
+    </script>
+</body>
+</html>
